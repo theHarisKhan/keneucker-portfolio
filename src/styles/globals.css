@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("bg.css");
+/* base file */
+@import url("base.css");
+/* components */
+@import url("about.css");
+@import url("timeline.css");
+/* pages */
+@import url("home.css");
+@import url("about.css");
+@import url('why.css');
+@import url('projects.css');
+@import url('bottom.css');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-bg: linear-gradient(
+    to left top,
+    #000000,
+    #010101,
+    #030302,
+    #040404,
+    #050505,
+    #090909,
+    #0d0d0d,
+    #101010,
+    #151515,
+    #19191a,
+    #1d1d1e,
+    #212123
+  );
+  --dark-lt: #343434;
+  --prim-clr: #f7fff7;
+  --link-clr: #2f3061;
+  --yel-clr: #ffe66d;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark-lt);
+  border-radius: 10px;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.main-body {
+  height: 100vh;
+  color: var(--prim-clr);
+}
+
+.main-content {
+  padding: 0 20px;
+}
+
+.btn-container{
+  margin-top: 50px;
+  margin-inline: 0 -15px;
+}
+
+.btn-container button{
+  margin: 10px 15px;
+}
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 20px;
+  }
+}

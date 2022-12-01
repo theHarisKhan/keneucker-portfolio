@@ -1,0 +1,88 @@
+.about-timeline-box {
+  position: relative;
+  padding: 0 20px 0 90px;
+}
+
+.about-timeline-box:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  left: 50px;
+  top: 50px;
+  background: var(--prim-clr);
+}
+
+.atb-thumbnail {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 4px;
+  left: 25px;
+  top: -10px;
+  background-color: #fff;
+}
+
+.atb-thumbnail img {
+  border-radius: 50px;
+}
+
+.atb-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.atb-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.94;
+}
+
+.atb-info .atb-time {
+  letter-spacing: 2px;
+  margin-block: 8px;
+  display: inline-block;
+}
+
+.atb-info .p,
+.atb-info p {
+  font-size: 16px;
+}
+
+.atb-info ul {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.atb-info ul li:before {
+  content: "🎯";
+  margin-right: 6px;
+}
+
+@media (max-width: 425px) {
+  .about-timeline-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-timeline-box:before {
+    height: 2px;
+    width: 150px;
+    top: 25px;
+    left: 60px;
+  }
+
+  .atb-thumbnail {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .atb-info {
+    margin-top: 20px;
+  }
+}

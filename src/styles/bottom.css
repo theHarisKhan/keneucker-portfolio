@@ -1,0 +1,39 @@
+.bottom-footer{
+    border-top: 1px solid #e5e5e5;
+    padding: 60px 0 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-footer > p{
+    max-width: 56%;
+    margin: 0 auto;
+    text-align: 22px;
+}
+
+.sponsor-link{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-link img{
+    width: 150px;
+}
+
+.sponsor-link span{
+    font-size: 14px;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .bottom-footer > p{
+        max-width: 100%;
+        text-align: center;
+    }
+}
